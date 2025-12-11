@@ -250,22 +250,19 @@ Notes_API/
 ├── config/
 │   └── db.js                 # Database connection configuration
 ├── controllers/
-│   ├── authController.js     # Authentication logic
-│   └── notesController.js    # Notes CRUD operations
+│   ├── user.controller.js     # Authentication logic
+│   └── note.controller.js    # Notes CRUD operations
 ├── middleware/
 │   ├── auth.js               # JWT authentication middleware
-│   └── errorHandler.js       # Global error handler
 ├── models/
-│   ├── User.js               # User schema
-│   └── Note.js               # Note schema
+│   ├── User.model.js               # User schema
+│   └── Note.model.js               # Note schema
 ├── routes/
-│   ├── authRoutes.js         # Authentication routes
-│   └── noteRoutes.js         # Notes routes
-├── utils/
-│   └── validators.js         # Input validation helpers
+│   ├── user.Routes.js         # Authentication routes
+│   └── note.Routes.js         # Notes routes
 ├── .env                      # Environment variables (not in repo)
 ├── .gitignore               # Git ignore file
-├── server.js                # Entry point
+├── index.js                 # Entry point
 ├── package.json             # Dependencies
 └── README.md                # Documentation
 ```
@@ -403,5 +400,3 @@ SOFTWARE.
 
 ---
 
-<p align="center">Made with ❤️ by Ayush</p>
-<p align="center">⭐ Star this repo if you find it helpful!</p>
